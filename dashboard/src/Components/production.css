@@ -1,0 +1,9 @@
+/* App.css */
+.centered-container {
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Centers text in case there are multiple lines */
+  }
+  

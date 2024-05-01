@@ -1,0 +1,76 @@
+/* Base styling */
+body {
+  font-family: 'Arial', sans-serif; /* Readable font */
+  margin: 0;
+  padding: 0;
+   /* Soft background color */
+}
+
+
+
+/* Parent container for horizontal arrangement */
+.machine-schedule {
+  display: grid; /* Use flexbox for horizontal layout */
+  flex-wrap: wrap; /* Allow cards to wrap for responsive design */
+  justify-content: space-around; /* Even spacing between cards */
+  /* padding: 20px; Padding for spacing */
+   /* Soft background */
+   float: left;
+  width: 1040px;
+  padding: 0 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+/* Machine card styling */
+.machine-card {
+  /* White background for contrast */
+  border: 1px solid #ddd; /* Light border for separation */
+  border-radius: 15px; /* Rounded corners for a softer look */
+  padding: 20px; /* Padding inside the card */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center; /* Light shadow for depth */
+  margin: 10px; /* Margin between cards */
+   /* Allow cards to grow equally */
+  max-width: 50%; /* Consistent maximum width for even layout */
+  
+
+
+}
+
+
+/* Machine schedule header */
+h1 {
+  text-align: center; /* Center-align the header */
+  font-size: 24px; /* Larger font size for the title */
+  color: #e1d5d5; /* Dark gray for contrast */
+  margin-bottom: 20px; /* Spacing below the title */
+}
+
+/* Sub-header for the machine name */
+h2 {
+  font-size: 20px; /* Slightly smaller than the main header */
+  color: #555; /* Medium gray for the machine name */
+  margin-bottom: 10px; /* Spacing below the sub-header */
+}
+
+/* List of time slots */
+.time-slot-list {
+  list-style-type: none; /* No default list style */
+  padding-left: 0; /* No padding on the left */
+}
+
+/* Individual time slots */
+.time-slot {
+  padding: 10px; /* Padding inside the list items */
+  border-bottom: 1px solid #ddd; /* Border for separation */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for list items */
+.time-slot:hover {
+  background-color: #f0f0f0; /* Slightly darker on hover */
+}
+

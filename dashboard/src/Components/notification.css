@@ -1,0 +1,32 @@
+/* Main container for the notification page */
+
+  
+  Notification icon styling
+  .notification-icon {
+    position: relative; 
+    cursor: pointer; /* Change cursor on hover */
+    font-size: 24px; /* Larger icon size */
+    margin-bottom: 20px; /* Spacing below the icon */
+  }
+  
+  /* Notification badge styling */
+  .notification-badge {
+    position: absolute; /* Absolute positioning */
+    top: -5px; /* Position above the icon */
+    right: -5px; /* Position to the right */
+    background-color: red; /* Red color for visibility */
+    color: white; /* White text */
+    font-size: 14px; /* Smaller font size for badge */
+    border-radius: 50%; /* Circular badge */
+    padding: 3px 6px; /* Padding for the badge */
+  }
+  
+  /* Notification styling */
+  .notification {
+     /* White background for contrast */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the notification */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Light shadow for depth */
+  }
+  

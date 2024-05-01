@@ -1,0 +1,43 @@
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .service-card {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    background-color: black; /* Add this line for black background */
+    color: white; /* Add this line for white text color */
+  }
+  
+  .service-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family:Arial;
+  }
+  
+  .service-card p {
+    font-size: 14px;
+    color: #fdfcfc;
+  }
+  body{
+    background-color: rgba(39,40,41,255);
+  }
+  .service-card {
+    background-color: #080808;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: rotate(3deg);
+  }
+  

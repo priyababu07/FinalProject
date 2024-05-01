@@ -1,0 +1,133 @@
+/* Define a green and ash color palette */
+:root {
+  --primary-green: #27ae60; /* A deep green for primary elements */
+  --light-green: #2ecc71; /* A light green for accents */
+  
+}
+
+/* Container to center the profile page */
+.container {
+  display: flex; /* Use Flexbox for alignment */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Ensure full viewport height */
+ 
+  
+}
+
+/* General styling for the profile page */
+.profile-page {
+  font-family: 'Arial', sans-serif; /* Set font family */
+  
+  padding: 20px; /* Padding around the profile page */
+  max-width: 800px; /* Maximum width for readability */
+   /* White background for contrast */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-left: 80px;
+}
+
+/* Heading style for the Profile page */
+.profile-page h1 {
+  text-align: center; /* Center the heading */
+  color: var(--primary-green); /* Primary green color for the heading */
+}
+
+/* Styling for the user information section */
+.user-info {
+  padding: 10px; /* Padding for spacing */
+ 
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 20px; /* Space below the user info section */
+}
+
+.user-info p {
+  margin: 0; /* Remove default margin */
+  padding: 5px 0; /* Padding for each paragraph */
+}
+
+/* Styling for buttons */
+button {
+  padding: 10px 20px; /* Padding for comfort */
+  background-color: var(--primary-green); /* Primary green button */
+  color: white; /* Text color on buttons */
+  border: none; /* No borders */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+button:hover {
+  background-color: var(--light-green); /* Light green on hover */
+}
+
+/* Styling for the change password section */
+.change-password-section {
+  margin-bottom: 20px; /* Space below this section */
+}
+
+.change-password {
+  
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding inside the form */
+}
+
+.change-password label {
+  display: block; /* Ensure label is on its own line */
+  margin-bottom: 5px; /* Spacing below label */
+  
+}
+
+.change-password input {
+  width: 100%; /* Full width input fields */
+  padding: 10px; /* Padding for comfort */
+  border: 1px solid var(--primary-green); /* Border with primary green */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.error-message {
+  color: #e74c3c; /* Red for error messages */
+  padding: 10px 0; /* Padding around error messages */
+}
+
+/* Styling for the feedback section */
+.feedback-section {
+  margin-bottom: 20px; /* Space below this section */
+}
+
+.feedback {
+  
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding inside the feedback section */
+  text-align: center; /* Center the text */
+}
+
+.feedback h2 {
+  margin-bottom: 20px; /* Space below the heading */
+  color: var(--primary-green); /* Primary green heading */
+}
+
+/* Styling for the star rating component */
+.star-rating {
+  display: flex; /* Flexbox for star alignment */
+  justify-content: center; /* Center the stars */
+}
+
+.star-rating label {
+  cursor: pointer; /* Pointer cursor for stars */
+}
+
+.star {
+  font-size: 2rem; /* Set star size */
+  transition: color 0.3s; /* Smooth transition for hover */
+}
+
+.star[color="#ffc107"] {
+  color: var(--primary-green); /* Set star color to green */
+}
+
+/* Styling for the log-out button */
+.log-out {
+  text-align: center; /* Center the log-out button */
+  margin-top: 20px; /* Space above the log-out section */
+}

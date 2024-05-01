@@ -1,0 +1,140 @@
+/* Define a default background color for the page */
+body {
+  background-color: #272829;
+}
+
+/* Page Container */
+.page-container {
+  background-color: #171718;
+  width: auto;
+  min-height: 100vh; /* Use min-height instead of a fixed value for height */
+  padding: 20px;
+}
+
+/* Text Container */
+.text-container {
+  font-size: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white;
+  z-index: 2;
+  
+  /* Responsive margin */
+  margin: 20px auto; /* Centered on smaller screens */
+}
+
+/* Custom Button */
+.custom-button {
+  background: linear-gradient(45deg, rgb(23, 25, 24), #020202c9); /* Gradient background */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.5s ease;
+  z-index: 2;
+  
+  /* Responsive alignment */
+  display: block; /* Ensures it's not inline */
+  margin: 10px auto; /* Centered */
+}
+
+.custom-button:hover,
+.custom-button:active {
+  background: linear-gradient(45deg, rgb(16, 171, 18), rgb(24, 8, 8)); /* Darker gradient on hover/click */
+  box-shadow: 0 0 10px rgba(6, 6, 6, 0.8);
+}
+
+/* Image Containers */
+.bulb-container {
+  width: 35vw; /* Use relative units for responsive width */
+  margin-top: 22vh; /* Relative top margin */
+  position: relative;
+  z-index: 1;
+  display: block; /* Ensures it stays within bounds */
+  margin-left: 750px;
+}
+
+/* Cloud Containers */
+.cloud-container {
+  animation: moveCloud 4s linear infinite;
+  margin-left: 50vw; /* Use relative positioning */
+  margin-bottom: 100px; /* Relative top margin */
+  position: relative;
+  z-index: 3;
+}
+
+.clou-container {
+  animation: moveCloud 3s infinite alternate;
+  margin-left: 40vw; /* Relative positioning */
+  margin-top: 10vh; /* Relative top margin */
+  position: relative;
+}
+
+/* Thunder Animation */
+.thunder {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0), #ffcc00, rgba(255, 255, 255, 0));
+  opacity: 0;
+  animation: thunderAnimation 0.5s linear forwards;
+}
+
+@keyframes thunderAnimation {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* MoveCloud Animation */
+@keyframes moveCloud {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100px); /* Adjust this value to move the cloud to the desired location */
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .text-container {
+    font-size: 30px; /* Smaller font size for smaller screens */
+    margin-top: 20px;
+   
+  }
+  
+  .custom-button {
+    font-size: 14px; /* Smaller button font size */
+  }
+  
+  .bulb-container {
+    width: 80vw; /* Adjust bulb size for smaller screens */
+  }
+  
+  .cloud-container,
+  .clou-container {
+    margin-left: 30vw; /* Adjust cloud positions for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .text-container {
+    font-size: 25px; /* Smaller font size for even smaller screens */
+  }
+  
+  .custom-button {
+    font-size: 12px; /* Smaller button font size */
+    padding: 8px 16px; /* Smaller padding */
+  }
+}

@@ -1,0 +1,51 @@
+MonthlyUsageReport.css
+
+/* Container styles for centering content */
+.report_container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px; /* Adjust as needed */
+    text-align: center; /* Center-align text */
+    align-content: center;
+  }
+  
+  /* Heading styles */
+  .h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Table styles for improved readability */
+  .report_table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Ensure no gaps between cells */
+    margin-bottom: 20px;
+  }
+  
+  th,
+  td {
+    padding: 10px; /* Padding within cells */
+    border: 1px solid #ccc; /* Light gray border */
+  }
+  
+  th {
+    background-color: #f2f2f2; /* Light gray background for headers */
+    text-transform: uppercase; /* Capitalize header text */
+  }
+  
+  /* Button styles for consistent look */
+  .report_button {
+    padding: 10px 20px; /* Padding inside the button */
+    border: none;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Show pointer cursor on hover */
+    margin: 10px; /* Spacing between buttons */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  .report_button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  

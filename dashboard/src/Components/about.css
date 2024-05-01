@@ -1,0 +1,43 @@
+body {
+    /* background-color: #788db9;  */
+      /* width: auto;   */
+     height: 100vh;   
+     }    
+.about-page {
+    /* background-color: #788db9;  */
+    margin-top: 50px;
+    margin-left: 650px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+     position: absolute;
+    z-index: 2; 
+}
+.clo-container {
+    margin-left: -400px;
+     position: absolute; 
+     z-index: 3;  
+    margin-top: 50px; 
+    animation: moveClouds 4s linear infinite alternate;
+    transition: transform 0.5s ease-out;
+}
+ .cl-container {
+    margin-left: -650px; 
+    margin-top: 50px;
+    animation: moveClouds 4s linear infinite;
+    transition: transform 0.5s ease-out;
+} 
+@keyframes moveClouds {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(50px);
+    }
+}
+.industry {
+    width: 600px;
+    margin-top: -300px;
+    margin-left: -650px;
+     /* position: relative; 
+    z-index: 1; */
+}

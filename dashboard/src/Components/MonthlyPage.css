@@ -1,0 +1,50 @@
+.monthly-page {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .charts {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .calculator-container {
+    flex: 1;
+    margin-right: 40px;
+  }
+  
+  .calculator-container h2 {
+    margin-bottom: 10px;
+  }
+  
+  .calculator-container div {
+    margin-bottom: 10px;
+  }
+  
+  .calculator-container label {
+    display: block;
+  }
+  
+  .calculator-container input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  .calculator-container button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .calculator-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .calculator-container h3 {
+    margin-top: 10px;
+  }
+  
